@@ -1,0 +1,335 @@
+/*
+ * BASE
+ */
+body {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 10px;
+	width: 100%;
+
+	background: #f5f5f5 url('../img/background.png') repeat center;
+
+	color: #333;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+a {
+	color: #333;
+	text-decoration: none;
+}
+
+a:hover,
+a:focus {
+	color: #555;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	margin: 0;
+}
+
+h2 {
+	margin-bottom: .5rem;
+
+	font-size: 2.25em;
+}
+
+h3 {
+	margin-top: .5rem;
+
+	font-size: 1.75em;
+}
+
+p {
+	color: #555;
+	font-size: 1.25em;
+}
+
+p a {
+	color: #7b9c90;
+}
+
+p a:hover,
+p a:focus {
+	color: #9ac4b4;
+}
+
+img {
+	display: block;
+	width: 100%;
+}
+
+/*
+ * LAYOUT
+ */
+/* Container */
+body > .l-container {
+	padding: 0;
+}
+
+.l-container {
+	box-sizing: border-box;
+	margin: 0 auto;
+	padding: 0 15px;
+	width: 100%;
+
+	background-color: #fff;
+}
+
+@media (min-width: 768px) {
+	.l-container {
+		padding: 0 30px;
+		max-width: 768px;
+	}
+}
+
+@media (min-width: 992px) {
+	.l-container {
+		padding: 0 60px;
+		max-width: 870px;
+	}
+}
+
+/* Simple grid system */
+.l-row {
+	margin: 0;
+	overflow: hidden;
+}
+
+@media (min-width: 768px) {
+	.l-col {
+		box-sizing: border-box;
+		float: left;
+		padding: 0 .5rem;
+	}
+
+	.l-col:first-child {
+		padding-left: 0;
+	}
+
+	.l-col:last-child {
+		padding-right: 0;
+	}
+
+	.l-col-1:only-child,
+	.l-col-2:only-child,
+	.l-col-3:only-child,
+	.l-col-4:only-child,
+	.l-col-5:only-child {
+		padding-right: .5rem;
+	}
+
+	.l-col-1 {
+		width: 16.666666667%;
+	}
+
+	.l-col-2 {
+		width: 33.333333333%;
+	}
+
+	.l-col-3 {
+		width: 50%;
+	}
+
+	.l-col-4 {
+		width: 66.666666667%;
+	}
+
+	.l-col-5 {
+		width: 83.333333333%;
+	}
+
+	.l-col-6 {
+		width: 100%;
+	}
+}
+
+/* Header */
+.l-header {
+	padding: 25px 0;
+}
+
+.l-header .l-container {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+}
+
+.l-header h1 {
+	font-size: 3.25em;
+	letter-spacing: .1em;
+	text-align: center;
+}
+
+/* Search */
+.l-search {
+	margin: 2rem auto;
+}
+
+/* Archive */
+.l-archive {
+	text-align: center;
+}
+
+.l-archive .l-row {
+	margin-bottom: .5rem;
+}
+
+@media (min-width: 768px) {
+	.l-archive {
+		text-align: right;
+	}
+
+	.l-archive  h4 {
+		text-align: left;
+	}
+}
+
+/* Footer */
+.l-footer {
+	margin-top: 25px;
+	padding: 25px 0;
+
+	background-color: #bfbfbf;
+
+	color: #eaeaea;
+}
+
+.l-footer .l-container {
+	background-color: #bfbfbf;
+}
+
+.l-footer a {
+	color: #fff;
+}
+
+/*
+ * MODULE
+ */
+/* Menu toggle */
+.menu-toggle {
+	outline: none;
+}
+
+.menu-toggle img {
+	box-sizing: border-box;
+	padding: 10px;
+	height: 36px;
+	margin: 0 auto;
+	width: 36px;
+
+	border: 1px solid #ededed;
+
+	transition: all .5s ease-in-out;
+}
+
+.menu-toggle img:hover,
+.menu-toggle img:focus {
+	border-color: #d5d5d5;
+
+	transition: all .5s ease-in-out;
+}
+
+/* Navigation menu */
+.nav-menu {
+	box-sizing: border-box;
+	display: none;
+
+	background-color: #fff;
+
+	color: #333;
+	font-size: 1.125em;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.nav-menu a.active {
+	color: #8d9c97;
+}
+
+.nav-menu a:hover {
+	color: #b5c9c2;
+}
+
+.nav-menu ul {
+	padding: 0;
+
+	list-style: none;
+}
+
+.nav-menu li {
+	padding: 5px;
+}
+
+/* Featured area */
+.featured-area {
+	margin-bottom: 1.5rem;
+	max-height: 350px;
+	overflow: hidden;
+	width: 100%;
+}
+
+.featured-area iframe {
+	display: block;
+	height: 150px;
+	width: 100%;
+}
+
+@media (min-width: 768px) {
+	.featured-area iframe {
+		height: 250px;
+	}
+}
+
+@media (min-width: 992px) {
+	.featured-area iframe {
+		height: 350px;
+	}
+}
+
+/* Form */
+form input,
+form textarea {
+	box-sizing: border-box;
+	margin-bottom: .5rem;
+	max-width: 100%;
+	padding: 12px;
+	width: 100%;
+
+	border: 1px solid #ededed;
+
+	background-color: #f5f5f5;
+
+	transition: all .5s ease-in-out;
+}
+
+form input[type="submit"] {
+	box-sizing: border-box;
+	margin-bottom: 2rem;
+	padding: 1rem 5rem;
+
+	border: none;
+
+	background-color: #b5c9c2;
+
+	color: #fff;
+	text-transform: uppercase;
+}
+
+form input:focus,
+form textarea:focus {
+	border-color: #d5d5d5;
+
+	transition: all .5s ease-in-out;
+}
+
+form input[type="submit"]:hover,
+form input[type="submit"]:focus {
+	background-color: rgba(181, 201, 194, .7);
+
+	color: #fff;
+
+	transition: all .5s ease-in-out;
+}

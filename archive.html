@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>UNI - DEMO</title>
+
+		<link href="css/normalize.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="l-container">
+			<header class="l-header">
+				<nav class="nav-menu">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a class="active" href="archive.html">Archive</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav>
+
+				<div class="l-container">
+					<h1><a href="index.html">UNI</a></h1>
+
+					<a class="menu-toggle" href="#">
+						<img src="img/menu.svg" />
+					</a>
+				</div>
+			</header>
+
+			<section class="featured-area">
+				<img alt="Featured image" src="img/office.jpg" title="Featured image" />
+			</section>
+
+			<section class="l-search">
+				<div class="l-container">
+					<form>
+						<div class="l-row">
+							<div class="l-col l-col-6">
+								<input type="text" placeholder="Search UNI">
+							</div>
+						</div>
+					</form>
+				</div>
+			</section>
+
+			<main class="l-archive">
+				<div class="l-container">
+					<div class="l-row">
+						<div class="l-col l-col-1">2016</div>
+					</div>
+					<div class="l-row">
+						<div class="l-col l-col-1">May</div>
+					</div>
+					<div class="l-row">
+						<div class="l-col l-col-1">22</div>
+						<div class="l-col l-col-5">
+							<h4><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</a></h4>
+						</div>
+					</div>
+					<div class="l-row">
+						<div class="l-col l-col-1">22</div>
+						<div class="l-col l-col-5">
+							<h4><a href="#">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</a></h4>
+						</div>
+					</div>
+					<div class="l-row">
+						<div class="l-col l-col-1">21</div>
+						<div class="l-col l-col-5">
+							<h4><a href="#">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</a></h4>
+						</div>
+					</div>
+					<div class="l-row">
+						<div class="l-col l-col-1">19</div>
+						<div class="l-col l-col-5">
+							<h4><a href="#">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</a></h4>
+						</div>
+					</div>
+				</div>
+			</main>
+
+			<footer class="l-footer">
+				<div class="l-container">
+					<h4>&copy; 2016 UNI | <a href="#">Vitor</a></h4>
+				</div>
+			</footer>
+		</div>
+
+		<script src="js/jquery-1.12.3.min.js"></script>
+		<script>
+			$(".menu-toggle").click(function() {
+				$(".nav-menu").slideToggle(200);
+			});
+		</script>
+	</body>
+</html>
